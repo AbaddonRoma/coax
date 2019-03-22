@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+<title>Screen Saver</title>
+</head>
+<body>
+	<div class="adjustment-container">
+		<label>
+			<span>Screen Saver Mode Activate Time (seconds)</span>
+			<input type="number" id="activateTime" placeholder="10">
+			<span class="visibly-hidden invalid">Minimum valid value - 2</span>
+		</label>
+		<label>
+			<span>Screen Saver Mode Slides Delay Time (seconds)</span>
+			<input type="number" min="2" id="delayTime" placeholder="5">
+			<span class="visibly-hidden invalid">Minimum valid value - 2</span>
+		</label>
+		<input type="button" value="Done" id="done">
+	</div>
+
+
+	<div id="screen-saver">
+		<div class="screen-saver__pic-wrapper">
+			<img src="" alt="" class="screen-saver__pic">
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
